@@ -3,21 +3,23 @@
 
 <head>
     <!--50 caracteres-->
-    <title>Esquina do Açai </title>
+    <title>Esquina do Açai</title>
 
     <meta charset="UTF-8">
     <meta name="author" content="Bruno Gressler da Silveira">
     <!--caracters 150-->
-    <meta name="description" content="Loja de Açai">
+    <meta name="description" content="Site Venda de Açai">
     <meta name="keywords" content="Açai">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,nofolow">
 
+    <link rel="stylesheet" type="text/css" href="styles/estilos-padrao.css">
     <link rel="stylesheet" type="text/css" href="styles/estilos.css">
     <link rel="shortcut icon" href="images/logo.png">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/bucarCEP.js"></script>
 </head>
 
 <body>
@@ -44,34 +46,36 @@
         <div class="sessao">
             <h2><i>Cadastrar</i></h2>
             <form method="post" action="controller/controller-cadastro.php">
-                <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome" class="form" required>
+                <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome" id="nome"
+                    required>
 
-                <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso"
-                    class="form" required>
+                <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso" id="email" required>
 
                 <input type="number" placeholder="*CEP" name="nunberZipCode"
-                    title="Diga seu CEP Para facilitar a Entrega" class="form cep" id="cep" value="" required>
+                    title="Diga seu CEP Para facilitar a Entrega" class="cep" id="cep" value="" required>
 
                 <input type="text" placeholder="*Endereço" name="textEndereco" title="Diga seu Endereço Para Entrega"
-                    class="form zipCode" id="endereco" required>
+                    class="zipCode" id="endereco" required>
 
-                <input type="number" placeholder="*Número" name="numberHouse" title="Número da sua Casa"
-                    class="form numbers">
+                <input type="text" placeholder="Número" name="numberHouse" title="Número da sua Casa"
+                    class="inputNumeroComplemento" id="numero">
 
-                <input type="number" placeholder="Complemento" name="numberComplement" title="Algum Complemento?"
-                    class="form numbers">
+                <input type="text" placeholder="Complemento" name="numberComplement" title="Algum Complemento?"
+                    class="inputNumeroComplemento" id="complemento" required>
 
-                <input type="number" placeholder="CPF" name="numberCPF" title="Diga seu CPF" class="form" required>
+                <input type="number" placeholder="*CPF" name="numberCPF" title="Diga seu CPF" id="cpf"
+                    required>
 
                 <input type="text" placeholder="*Senha Para Acesso" name="passwordPassword"
-                    title="Crie uma Senha Para Acesso" class="form" required>
+                    title="Crie uma Senha Para Acesso" id="senha" required>
 
-                <select name="selectTipo" class="form">
+                <select name="selectTipo" id="tipoConta" required>
+                    <option value="">*Selecione uma Conta</option>
                     <option value="user">Cliente</option>
                     <option value="adm">ADM</option>
                 </select>
 
-                <input type="submit" value="Feito" class="input_ok form">
+                <input type="submit" value="Feito" class="input_ok form" onClick="cadastrar()">
                 <input type="reset" value="Limpar" class="input_ok input_limpar form">
             </form>
             <a href="login.php"><button type="submit" class="input_ok bt">Voltar</button></a>
@@ -82,11 +86,13 @@
     <footer id="contato_cadastrar">
         <form method="post" action="#">
             <textarea name="menssagem" placeholder="Esceva sua Menssagem"></textarea>
+            <div>
+                <input type="number" placeholder="*Digite seu Endereço" name="numberCEP">
+            </div>
 
-            <input type="number" placeholder="*Digite seu Endereço" name="numberCEP">
-
-            <input type="number" placeholder="*Digite seu tel/cel" name="numberTelefone">
-
+            <div>
+                <input type="number" placeholder="*Digite seu tel/cel" name="numberTelefone">
+            </div>
 
         </form>
         <h3>Rua Carmelita Gripp 342 Parque dos Maias | Porto Alegre</h3>
@@ -97,6 +103,7 @@
 
         <span class="copyright">Todos os Direitos Reservados &copy;</span>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 

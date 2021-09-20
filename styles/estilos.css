@@ -91,9 +91,9 @@ p{
 }
 .zipCode{
     width: 45%;
-    float: none;
+    float: left;
 }
-.numbers{
+.inputNumeroComplemento{
     width: 15%;
     float: right;
 }

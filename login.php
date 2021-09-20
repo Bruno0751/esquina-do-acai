@@ -7,17 +7,17 @@
 <html lang="pt-br">
     <head>
         <!--50 caracteres-->
-        <title>Esquina do Açai </title>
+        <title>Esquina do Açai</title>
 
         <meta charset="UTF-8">
         <meta name="author" content="Bruno Gressler da Silveira">
         <!--caracters 150-->
-        <meta name="description" content="Loja de Açai">
+        <meta name="description" content="Site Venda de Açai">
         <meta name="keywords" content="Açai">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index,nofolow">
 
-        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/estilos-padrao.css">
         <link rel="stylesheet" type="text/css" href="styles/estilos.css">
         <link rel="shortcut icon" href="images/logo.png">
     </head>
@@ -50,9 +50,9 @@
             <div class="sessao">
                 <h2><i>Login</i></h2>
                 <form method="post" action="#">
-                    <input type="text" placeholder="*Email" name="emailEmail" class="form" title="Digite seu Email de Acesso">
+                    <input type="text" placeholder="*Email" name="emailEmail" title="Digite seu Email de Acesso">
 
-                    <input type="text" placeholder="*Senha" name="passwordSenha" class="form" title="Digite sua Senha de Acesso">
+                    <input type="text" placeholder="*Senha" name="passwordSenha" title="Digite sua Senha de Acesso">
 
                     <input type="submit" value="Feito" class="input_ok" onClick="entrar()">
                 </form>
