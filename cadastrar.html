@@ -13,13 +13,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,nofolow">
 
-    <link rel="stylesheet" type="text/css" href="styles/estilos-padrao.css">
-    <link rel="stylesheet" type="text/css" href="styles/estilos.css">
+    <link rel="stylesheet" type="text/css" href="style/w2ui.min.css">
+    <link rel="stylesheet" type="text/css" href="style/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="style/jqueryToast.css">
+    <link rel="stylesheet" type="text/css" href="style/estilos.css">
+
     <link rel="shortcut icon" href="images/logo.png">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/bucarCEP.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/jqueryToast.js"></script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="js/bucarCEP.js"></script>
 </head>
 
 <body>
@@ -46,10 +52,10 @@
         <div class="sessao">
             <h2><i>Cadastrar</i></h2>
             <form method="post" action="controller/controller-cadastro.php">
-                <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome" id="nome"
-                    required>
+                <input type="text" placeholder="*Nome?" name="textName" title="Digite seu Nome" id="nome" required>
 
-                <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso" id="email" required>
+                <input type="email" placeholder="*Email" name="emailEmail" title="Digite seu Email Para Acesso"
+                    id="email" required>
 
                 <input type="number" placeholder="*CEP" name="nunberZipCode"
                     title="Diga seu CEP Para facilitar a Entrega" class="cep" id="cep" value="" required>
@@ -63,8 +69,7 @@
                 <input type="text" placeholder="Complemento" name="numberComplement" title="Algum Complemento?"
                     class="inputNumeroComplemento" id="complemento" required>
 
-                <input type="number" placeholder="*CPF" name="numberCPF" title="Diga seu CPF" id="cpf"
-                    required>
+                <input type="number" placeholder="*CPF" name="numberCPF" title="Diga seu CPF" id="cpf" required>
 
                 <input type="text" placeholder="*Senha Para Acesso" name="passwordPassword"
                     title="Crie uma Senha Para Acesso" id="senha" required>
@@ -104,7 +109,7 @@
         <span class="copyright">Todos os Direitos Reservados &copy;</span>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

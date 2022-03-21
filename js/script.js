@@ -1,13 +1,40 @@
-
-jQuery(document).ready(function ($) {
-    $(".scroll").click(function (event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+function toast() {
+    $.toast({
+        icon: "success",
+        heading: "OK", //CABELHALHO
+        text: "Tudo Certo por aqui", //TEXTO
+        loader: true, //MOSTRAR LOADER
+        loaderBg: "red", //COR LOADER
+        //bgColor: "#ffffff",
+        color: "#000000",
+        textAlign: 'center',
+        showHideTransition: 'slide', //TIPO DE ABERTURA
+        // hideAfter: true,
+        allowToastClose: false, //REMOVER ICONE DE FECHAR
+        stack: false, //NAO APARECE MAIS DE UM - PODE RECEBER O NUMERO
+        position: 'top-left', //bottom-left | bottom-right | bottom-center | mid-center OU
+        //position: {
+        //    left: 120,
+        //    top: 120
+        //},
+        //beforeShow: function() {
+        //    alert('The toast is about to appear');
+        //},
+        //afterShown: function() {
+        //    alert('Toast has appeared.');
+        //},
+        //beforeHide: function() {
+        //    alert('Toast is about to hide.');
+        //},
+        afterHidden: function () {
+            alert('Cadastrado!');
+        }
     });
-});
+}
+
 
 function entrar() {
-    window.alert("Em Breve");
+    w2alert("Em Breve");
 }
 
 function cadastrar() {
