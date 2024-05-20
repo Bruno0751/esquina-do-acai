@@ -2,30 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <!--50 caracteres-->
     <title>Esquina do Açai</title>
-
     <meta charset="UTF-8">
-    <meta name="author" content="Bruno Gressler da Silveira">
-    <!--caracters 150-->
-    <meta name="description" content="Site Venda de Açai">
-    <meta name="keywords" content="Açai">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,nofolow">
-
-    <link rel="stylesheet" type="text/css" href="style/w2ui.min.css">
-    <link rel="stylesheet" type="text/css" href="style/lightbox.min.css">
-    <link rel="stylesheet" type="text/css" href="style/jqueryToast.css">
-    <link rel="stylesheet" type="text/css" href="style/estilos.css">
-
-    <link rel="shortcut icon" href="images/logo.png">
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/jqueryToast.js"></script>
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-    <script type="text/javascript" src="js/bucarCEP.js"></script>
+    <script type="text/javascript" src="js/head.js"></script>
 </head>
 
 <body>
@@ -33,7 +12,7 @@
 
     <header>
         <figure>
-            <a href="index.html"><img src="images/logo.png" alt="Home page" class="logo"></a>
+            <a href="index.php"><img src="images/logo.png" alt="Home page" class="logo"></a>
         </figure>
         <nav>
             <ul>
